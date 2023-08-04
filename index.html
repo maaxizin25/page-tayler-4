@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    defer="defer"
+  />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-one">
+        <img class="background-first" src="assets/806DBBB0-9BF7-4D74-9D7F-26D7949F1777 1.png" alt="">
+        <img class="telegram-1" src="assets/telegram-3d-icon-free-png 1.png" alt="">
+        <img class="telegram-2" src="assets/telegram-3d-icon-free-png 2.png" alt="">
+        <div class="section-one-elements-text">
+            <h2>ACESSO TOTAL <BR>100% LIBERADO.</BR></h2>
+            <p class="section-one-description-text"> <b>Parabéns, você foi um dos 50 selecionados </b> 
+                a ganhar nossa: INTELIGENCIA ARTIFICIAL GRATUITA + LIVE AO VIVO + SUPORTEEXCLUSIVO DA MINHA EQUIPE.Receba seu acesso usando o aplicativoTELEGRAM clicando no botão abaixo:</p>
+                <a class="button-redirect" href="">ACESSAR GRUPO GRATUITO NO TELEGRAM</a>
+        </div>
+      </div>
+      <div class="section-two">
+        <img class="phone-mockup" src="assets/iphone-mockup 1.png" alt="">
+        <div class="section-two-elements-text">
+            <h3>MILHARES DE SINAIS NA PALMA DA SUA MÃO! <br>100% GRATUITO</h3>
+            <P>NÃO POSSUI O TELEGRAM? BAIXE AGORA MESMO</P>
+            <img class="button-down" src="assets/google-play.webp" alt="">
+            <img class="button-down" src="assets/applestore.webp" alt="">
+        </div>
+      </div>
+      <div class="section-three">
+        <div class="section-three-title">
+            <h3>VEJA OS RESULTADOS DAS <br>NOSSAS OPERAÇÕES AO VIVO</h3>
+        </div>
+        <img class="box-shadow-effect" src="assets/Ellipse 6.png" alt="">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="slides-imgs" src="assets/dep1.webp" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="slides-imgs" src="assets/dep2.webp" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="slides-imgs" src="assets/dep3.webp" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="slides-imgs" src="assets/dep4.webp" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="slides-imgs" src="assets/dep5.webp" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="slides-imgs" src="assets/dep6.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <a class="button-redirect" href="">ACESSAR GRUPO GRATUITO NO TELEGRAM</a>
+      </div>
+    </div>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+    ></script>
+    <script async type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
+      function updateSlidesPerView() {
+        const isMobile = window.innerWidth <= 800;
+        const slidesPerView = isMobile ? 2 : 3;
+        swiper.params.slidesPerView = slidesPerView;
+        swiper.update();
+      }
+      const swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        coverflowEffect: {
+          slideShadows: true,
+        },
+        direction: "horizontal",
+        slidesPerView: 2,
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 0,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      updateSlidesPerView();
+
+      function animateButtonOnLoad() {
+        const button = document.querySelectorAll(".animate-on-load");
+        button.forEach((e) => e.classList.add("animate-pulse"));
+      }
+      window.onload = function () {
+        animateButtonOnLoad();
+      };
+    </script>
+  </body>
+  <footer>
+    <p>
+        Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.Depois que você sair do Facebook, a responsabilidadenão é deles e sim do nosso site.Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.
+    </p>
+  </footer>
+</html>
